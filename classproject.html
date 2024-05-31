@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Slot Booking
+        </title>
+        <style>
+            button[type="submit"]{
+                width : 100px;
+            }
+            button[type="reset"]{
+                width : 175px;
+            }
+        </style>
+        <script src="classproject.js"></script>
+    </head>
+    <body>
+        <h1> Slot Booking </h1>
+        <form>
+            <table border=1>
+                <tr>
+                    <td><label for="name">Name :</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Age">Age :</label></td>
+                    <td><input type="number" id="age" name="age" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Mobile">Mobile :</label></td>
+                    <td><input type="text" id="mobile" name="mobile" required></td>
+                </tr>
+                <tr>
+                    <td><label for="slot">Select Option : </label></td>
+                    <td>
+                        <input type="radio" id="option1" name="option" value="10am - 11am">
+                        <label for="option1">10am - 11am</label>
+                        <br>
+                        <input type="radio" id="option2" name="option" value="11am - 12pm">
+                        <label for="option2">11am - 12pm</label>
+                        <br>
+                        <input type="radio" id="option3" name="option" value="1pm - 2pm">
+                        <label for="option3">1pm - 2pm</label>
+                        <br>
+                        <input type="radio" id="option4" name="option" value="2pm - 3pm">
+                        <label for="option4">2pm - 3pm</label>
+                        <br>
+                        <input type="radio" id="option5" name="option" value="3pm - 4pm">
+                        <label for="option5">3pm - 4pm</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" onclick="setvalues(); return false;">Submit</button>
+                    </td>
+                    <td>
+                        <button type="reset">Reset</button>
+                    </td>
+            </table>
+        </form>
+        <br>
+        <table id="myTable" border=1>
+            <tbody>
+            </tbody>
+        </table>
+        <br>
+        <button type="submit" onclick="getvalues()">Show slots</button>
+    </body>
+</html>
+
